@@ -1,0 +1,705 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, /Users/lars/GitHub/1000fryd/scss/normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 4, /Users/lars/GitHub/1000fryd/scss/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 11, /Users/lars/GitHub/1000fryd/scss/neat/grid/_box-sizing.scss */
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "leaguegothic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-regular-webfont.woff2") format("woff2"), url("fonts/leaguegothic-regular-webfont.woff") format("woff"), url("fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("fonts/leaguegothic-regular-webfont.svg#leaguegothic") format("svg"); }
+
+@font-face {
+  font-family: "leaguegothic";
+  font-style: italic;
+  font-weight: normal;
+  src: url("fonts/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/leaguegothic-italic-webfont.woff2") format("woff2"), url("fonts/leaguegothic-italic-webfont.woff") format("woff"), url("fonts/leaguegothic-italic-webfont.ttf") format("truetype"), url("fonts/leaguegothic-italic-webfont.svg#leaguegothic") format("svg"); }
+
+@font-face {
+  font-family: "opensans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.woff2") format("woff2"), url("fonts/OpenSans-Light-webfont.woff") format("woff"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.svg#opensans") format("svg"); }
+
+/* line 11, /Users/lars/GitHub/1000fryd/scss/main.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 16, /Users/lars/GitHub/1000fryd/scss/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal; }
+
+/* line 21, /Users/lars/GitHub/1000fryd/scss/main.scss */
+p {
+  margin: 0 0 1em 0; }
+
+/* line 26, /Users/lars/GitHub/1000fryd/scss/main.scss */
+body {
+  background-color: #5E5858;
+  color: #fff;
+  font-family: "opensans";
+  padding: 0 1em; }
+
+/* line 33, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.site-name {
+  display: none; }
+
+/* line 37, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.site-logo {
+  margin: 0 auto;
+  display: block;
+  opacity: .8;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  transition: all 2s; }
+  /* line 42, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .site-logo:hover {
+    opacity: 1; }
+
+/* line 47, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.nav-top {
+  border: 1px solid #A7A4A4;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center; }
+  /* line 20, /Users/lars/GitHub/1000fryd/scss/bourbon/addons/_clearfix.scss */
+  .nav-top::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 57, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .nav-top li {
+    display: inline-block;
+    margin-right: -4px;
+    padding: 0;
+    width: 20%;
+    min-width: 8rem;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center; }
+  /* line 67, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .nav-top a {
+    color: #A7A4A4;
+    font-family: "leaguegothic";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: .03em;
+    display: block; }
+
+/* line 80, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.date-event {
+  font-family: "leaguegothic";
+  font-style: italic;
+  font-size: 2em;
+  line-height: 1em;
+  letter-spacing: .03em;
+  color: #A7A4A4;
+  margin: 0; }
+
+/* line 90, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.title-event {
+  font-family: "leaguegothic";
+  letter-spacing: .03em;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0 0 1rem 0; }
+
+/* line 101, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.action-bar {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem; }
+  /* line 20, /Users/lars/GitHub/1000fryd/scss/bourbon/addons/_clearfix.scss */
+  .action-bar::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 106, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.wrapper-action {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  /* line 89, /Users/lars/GitHub/1000fryd/scss/neat/grid/_span-columns.scss */
+  .wrapper-action:last-child {
+    margin-right: 0; }
+
+/* line 109, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 0;
+  text-align: center; }
+  /* line 113, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .btn a {
+    color: inherit;
+    text-decoration: none; }
+
+/* line 119, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-time {
+  border: 1px solid #F8C133;
+  color: #F8C133; }
+
+/* line 124, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-entre {
+  border: 1px solid #8BC349;
+  color: #8BC349; }
+
+/* line 129, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-presale {
+  border: 1px solid #EB5333;
+  color: #EB5333; }
+
+/* line 134, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-facebook {
+  border: 1px solid #2F96F3;
+  color: #2F96F3; }
+
+/* line 139, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-twitter {
+  border: 1px solid #54BDD5;
+  color: #54BDD5; }
+
+/* line 144, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-mail {
+  border: 1px solid #CDDC38;
+  color: #CDDC38; }
+
+@media screen and (min-width: 769px) {
+  /* line 150, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .page {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 20, /Users/lars/GitHub/1000fryd/scss/bourbon/addons/_clearfix.scss */
+    .page::after {
+      clear: both;
+      content: "";
+      display: table; } }
+
+@media screen and (min-width: 769px) {
+  /* line 156, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .col-main {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    /* line 89, /Users/lars/GitHub/1000fryd/scss/neat/grid/_span-columns.scss */
+    .col-main:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 769px) {
+  /* line 162, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .col-second {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    /* line 89, /Users/lars/GitHub/1000fryd/scss/neat/grid/_span-columns.scss */
+    .col-second:last-child {
+      margin-right: 0; } }
+
+/* line 168, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.img-event {
+  position: relative;
+  margin-bottom: 1rem; }
+
+/* line 173, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.type-event {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  background: #EB5333;
+  padding: 0.2em 0.5em; }
+
+/* line 183, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.icon {
+  display: inline-block;
+  width: .9em;
+  height: .9em;
+  fill: currentColor;
+  vertical-align: baseline; }
+
+/* line 194, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.hide {
+  display: none; }
+
+/* line 198, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.wrapper-more-event {
+  position: relative; }
+
+/* line 202, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.content-event-btn {
+  display: block;
+  background: none;
+  background-color: rgba(255, 0, 0, 0);
+  background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0) 0%, #5E5858 70%);
+  background-image: linear-gradient(rgba(255, 0, 0, 0) 0%, #5E5858 70%, , , , , , , , );
+  text-align: center;
+  width: 100%;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  padding-top: 8em;
+  height: 160px;
+  box-sizing: border-box; }
+
+/* line 217, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.btn-more-event {
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  transition: transform 1s;
+  background: none;
+  border: 0; }
+  /* line 222, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .btn-more-event:hover,
+  .btn-more-event:focus {
+    opacity: .5; }
+  /* line 225, /Users/lars/GitHub/1000fryd/scss/main.scss */
+  .btn-more-event:-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+/* line 232, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.js-expanded {
+  background: none;
+  padding-top: 0;
+  height: 100px; }
+
+/* line 239, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.js-expanded .btn-more-event {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: 0em;
+  padding-top: 0; }
+
+/* line 246, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.content-event {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 6em; }
+
+/* line 254, /Users/lars/GitHub/1000fryd/scss/main.scss */
+.js-expandable {
+  cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,256 @@
+@import "normalize";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@include font-face("leaguegothic", "fonts/leaguegothic-regular-webfont");
+@include font-face("leaguegothic","fonts/leaguegothic-italic-webfont", normal, italic);
+@include font-face("opensans","fonts/OpenSans-Light-webfont");
+
+$subtle: #A7A4A4;
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+
+body { 
+  background-color: #5E5858 ;
+  color: #fff;
+  font-family: "opensans";
+  padding: 0 1em;
+}
+
+.site-name {
+  display: none;
+}
+
+.site-logo {
+  margin: 0 auto;
+  display: block;
+  opacity: .8;
+  @include transition(all 2.0s);
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nav-top {
+  border: 1px solid $subtle;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  @include clearfix;
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: -4px;
+    padding: 0;
+    width: 20%;
+    min-width: 8rem;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  a {
+    color: $subtle;
+    font-family: "leaguegothic";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: .03em;
+    display: block;
+    
+  }
+}
+
+.date-event {
+  font-family: "leaguegothic";
+  font-style: italic;
+  font-size: 2em;
+  line-height: 1em;
+  letter-spacing: .03em;
+  color: $subtle;
+  margin: 0;
+}
+
+.title-event {
+  font-family: "leaguegothic";
+  letter-spacing: .03em;  
+  font-style: italic;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
+  margin: 0 0 1rem 0;
+}
+
+
+.action-bar {
+  @include outer-container;
+  margin-bottom: 1rem;
+}
+
+.wrapper-action {
+  @include span-columns(4);
+}
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 0;
+  text-align: center;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.btn-time {
+  border: 1px solid #F8C133  ;
+  color: #F8C133  ;
+}
+
+.btn-entre {
+  border: 1px solid #8BC349  ;
+  color: #8BC349  ;
+}
+
+.btn-presale {
+  border: 1px solid #EB5333 ;
+  color: #EB5333 ;
+}
+
+.btn-facebook {
+  border: 1px solid #2F96F3   ;
+  color: #2F96F3   ;
+}
+
+.btn-twitter {
+  border: 1px solid #54BDD5 ;
+  color: #54BDD5 ;
+}
+
+.btn-mail {
+  border: 1px solid #CDDC38 ;
+  color: #CDDC38 ;
+}
+
+
+.page {
+  @include media(769px) {
+    @include outer-container;
+  }
+}
+
+.col-main {
+  @include media(769px) {
+    @include span-columns(7);
+  }
+}
+
+.col-second {
+  @include media(769px) {
+    @include span-columns(5);
+  }
+}
+
+.img-event {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.type-event {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  background: #EB5333;
+  padding: .2em .5em; 
+}
+
+.icon {
+  display: inline-block;
+  width: .9em;
+  height: .9em;
+  fill: currentColor;
+  vertical-align:baseline;
+}
+
+.icon-text {
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper-more-event {
+  position: relative;
+}
+
+.content-event-btn {
+  display: block;
+  background: none;
+  @include linear-gradient(rgba(255,0,0,0) 0%, #5E5858 70%);
+  text-align: center;
+  width: 100%;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  padding-top: 8em;
+  height: 160px;
+  box-sizing: border-box;
+
+}
+
+.btn-more-event {
+  @include transition(transform 1.0s);
+  background: none;
+  border: 0;
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+  &:-moz-focus-inner {
+
+    border: 0;
+    padding: 0;
+  }
+}
+
+.js-expanded {
+  background: none;
+  padding-top: 0;
+  height: 100px;
+  
+}
+
+.js-expanded .btn-more-event {
+  @include transform(rotate(180deg));
+  margin-top: 0em;
+  padding-top: 0;
+
+}
+
+.content-event {
+  height: 160px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 6em;
+
+}
+
+.js-expandable {
+  cursor: pointer;
+}
